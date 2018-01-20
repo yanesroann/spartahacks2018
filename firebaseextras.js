@@ -12,7 +12,7 @@
   var database = firebase.database();
 
   function writeImagedata() {
-    firebase.database().ref('images/' + imageUrl).set({
+    firebase.database().ref('images/' + document.getElementById("imgururl")).set({
       username: "ok",
       width: "1",
       height: "2",
