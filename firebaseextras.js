@@ -14,6 +14,8 @@
   function writeImagedata(imageID) {
     var url_thing = document.getElementById("imgururl");
     var title_thing = document.getElementById("phototitle");
+    console.log(url_thing);
+    console.log(title_thing);
     firebase.database().ref('images/' + imageID).set({
       username: "ok",
       width: "1",
