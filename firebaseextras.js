@@ -12,11 +12,13 @@
   var database = firebase.database();
 
   function writeImagedata(imageID) {
+    var url_thing = document.getElementById("imgururl");
+    var title_thing = document.getElementById("phototitle");
     firebase.database().ref('images/' + imageID).set({
       username: "ok",
       width: "1",
       height: "2",
-      url: document.getElementById("imgururl"),
-      title: document.getElementById("phototitle")
+      url: url_thing,
+      title: title_thing
     });
   }
