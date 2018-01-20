@@ -14,7 +14,11 @@
   function writeImagedata(imageID) {
     var url_thing = document.getElementById("imgururl").value;
     var title_thing = document.getElementById("phototitle").value;
-    var image_id    = database.ref('images/').once('value');
+    var imageRef = database.ref('images/').once('value');
+    imageRef.on('value', function(snapshot) {
+      var image_id = snapshot.val();
+    });
+
     console.log(image_id);
     console.log(url_thing);
     console.log(title_thing);
