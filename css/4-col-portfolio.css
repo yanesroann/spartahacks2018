@@ -23,15 +23,17 @@ body {
 }
 
 .navbar {
-  background-color: red;
+  background: linear-gradient(to right, #41DD92, #3AAEAE);
 }
 .navbar-brand {
-  color: blue;
+  color: white;
 }
 
 .navbar-brand {
   font-family: 'Lobster', cursive;
+  font-size: 18px;
 }
 .nav-link {
   font-family: 'Roboto', sans-serif;
+  color: white;
 }
