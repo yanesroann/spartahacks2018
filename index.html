@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="CaptionvateLogo.png" width="140" height="50" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" onclick="writeImagedata(1, 1, 1, 1, 1, 1)" href="#">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
@@ -124,6 +124,18 @@
         messagingSenderId: "1097294590667"
       };
       firebase.initializeApp(config);
+
+      var database = firebase.database();
+
+      function writeImagedata(imageUrl, userId, name, width, height, comments) {
+        firebase.database().ref('images/' + userId).set({
+          username: name,
+          width: width,
+          height: height,
+          profile_picture : imageUrl
+        });
+      }
+
     </script>
 
     <!-- Bootstrap core JavaScript -->
