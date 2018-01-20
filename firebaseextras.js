@@ -18,9 +18,10 @@
     var image_id;
     imageRef.on('value', function(snapshot) {
       image_id = snapshot.val();
+      console.log(image_id);
     });
 
-    console.log(image_id);
+
     console.log(url_thing);
     console.log(title_thing);
     firebase.database().ref('images/' + image_id).set({
