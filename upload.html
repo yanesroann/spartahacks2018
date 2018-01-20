@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Captionvate</title>
+    <title>Post</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,12 +19,13 @@
     <!-- Custom fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
 
+
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="CaptionvateLogo.png" width="140" height="50" alt="">
@@ -35,7 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="index.html">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -43,7 +44,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="writeImagedata(1, 1, 1, 1, 1, 1)" href="#">Services</a>
+              <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="upload.html">Upload</a>
@@ -57,23 +58,14 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Most Recent Posts
-
+      <h1 class="my-4">Post
       </h1>
 
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Project One</a>
-              </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-            </div>
-          </div>
-        </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">Imgur URL</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
       </div>
+      <br>
       <!-- /.row -->
 
       <!-- Pagination -->
@@ -111,32 +103,6 @@
       </div>
       <!-- /.container -->
     </footer>
-
-    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyBGxDJULQHZX5KqY9vl7V4ZJkcbm3-6xjM",
-        authDomain: "spartahacks2018.firebaseapp.com",
-        databaseURL: "https://spartahacks2018.firebaseio.com",
-        projectId: "spartahacks2018",
-        storageBucket: "spartahacks2018.appspot.com",
-        messagingSenderId: "1097294590667"
-      };
-      firebase.initializeApp(config);
-
-      var database = firebase.database();
-
-      function writeImagedata(imageUrl, userId, name, width, height, comments) {
-        firebase.database().ref('images/' + imageUrl).set({
-          username: name,
-          width: width,
-          height: height,
-          profile_picture : imageUrl
-        });
-      }
-
-    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
