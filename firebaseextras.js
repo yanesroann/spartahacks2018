@@ -18,7 +18,7 @@
     var imageRef = database.ref('images/').once('value').then(function(snapshot) {
       var image_id = Object.keys(snapshot).length-1;
       console.log(image_id);
-      console.log(Object.keys(snapshot))
+      console.log(imageRef)
       firebase.database().ref('images/' + image_id).set({
 
         username: "ok",
