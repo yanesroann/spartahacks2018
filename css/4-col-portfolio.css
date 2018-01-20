@@ -14,16 +14,13 @@ body {
   }
 }
 
-.card h-100 {
-  border: 2px;
-  border-color: #3AAEAE;
-}
-
 .card-title {
   font-family: 'Lobster', cursive;
   color: #EF897D;
 }
 .portfolio-item {
+  border: 2px;
+  border-color: #3AAEAE;
   margin-bottom: 30px;
 }
 
