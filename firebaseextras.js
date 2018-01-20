@@ -11,11 +11,11 @@
 
   var database = firebase.database();
 
-  function writeImagedata(imageUrl, userId, name, width, height, comments) {
+  function writeImagedata() {
     firebase.database().ref('images/' + imageUrl).set({
-      username: name,
-      width: width,
-      height: height,
+      username: "ok",
+      width: "1",
+      height: "2",
       url: document.getElementById("imgururl"),
       title: document.getElementById("phototitle")
     });
