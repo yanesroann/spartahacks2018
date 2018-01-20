@@ -15,7 +15,7 @@
     var url_thing = document.getElementById("imgururl").value;
     var title_thing = document.getElementById("phototitle").value;
     var imageRef = database.ref('images/').once('value').then(function(snapshot) {
-      var image_id = snapshot.val().length;
+      var image_id = snapshot.val();
       console.log(image_id);
     });
 
