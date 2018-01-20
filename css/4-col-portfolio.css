@@ -18,6 +18,11 @@ body {
   border: 2px;
   border-color: #3AAEAE;
 }
+
+.card-title {
+  font-family: 'Lobster', cursive;
+  color: #EF897D;
+}
 .portfolio-item {
   margin-bottom: 30px;
 }
@@ -45,4 +50,5 @@ body {
 .my-4 {
   font-family: 'Roboto', sans-serif;
   color: #bfbfbf;
+  font-size: 20px;
 }
