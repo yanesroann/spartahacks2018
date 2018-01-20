@@ -11,8 +11,8 @@
 
   var database = firebase.database();
 
-  function writeImagedata() {
-    firebase.database().ref('images/' + document.getElementById("imgururl")).set({
+  function writeImagedata(imageID) {
+    firebase.database().ref('images/' + imageID).set({
       username: "ok",
       width: "1",
       height: "2",
