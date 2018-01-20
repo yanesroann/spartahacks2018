@@ -16,9 +16,9 @@
     var title_thing = document.getElementById("phototitle").value;
     //var image_id;
     var imageRef = database.ref('images/').once('value').then(function(snapshot) {
-      var image_id = Object.keys(snapshot).length-1;
+      var image_id = Object.keys(snapshot.val()).length-1;
       console.log(image_id);
-      console.log(imageRef)
+      console.log(Object.keys(snapshot.val()))
       firebase.database().ref('images/' + image_id).set({
 
         username: "ok",
