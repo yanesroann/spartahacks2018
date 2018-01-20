@@ -14,12 +14,9 @@
   function writeImagedata(imageID) {
     var url_thing = document.getElementById("imgururl").value;
     var title_thing = document.getElementById("phototitle").value;
-    var imageRef = database.ref('images/');
-    var image_id;
-    imageRef.on('value', function(snapshot) {
-      image_id = snapshot.val();
-      console.log(image_id);
-    });
+    var imageRef = database.ref('images/').once('value');
+    var image_id = imageRef;
+    console.log(image_id);
 
 
     console.log(url_thing);
