@@ -27,8 +27,8 @@ body {
 }
 
 .navbar-brand {
-  color: blue;
+  font-family: 'Lobster', cursive;
 }
 .nav-link {
-  font-size: 100px;
+  font-family: 'Roboto', sans-serif;
 }
