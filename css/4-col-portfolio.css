@@ -29,3 +29,6 @@ body {
 .navbar-brand {
   color: blue;
 }
+.nav-link {
+  font-size: 100px;
+}
