@@ -19,7 +19,7 @@
       image_id = Object.keys(snapshot).length-1;
       console.log(image_id);
     });
-
+    console.log(image_id);
 
 
     console.log(url_thing);
