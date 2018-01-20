@@ -1,2 +1,2 @@
 # spartahacks2018
-This is our terrible project.
+This is our project.
