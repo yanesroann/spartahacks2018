@@ -14,6 +14,11 @@ body {
   }
 }
 
+.about-title {
+    background: linear-gradient(to right, #41DD92, #3AAEAE);
+    height: 300px;
+    margin: 0px;
+}
 .card-title {
   font-family: 'Lobster', cursive;
   color: #EF897D;
